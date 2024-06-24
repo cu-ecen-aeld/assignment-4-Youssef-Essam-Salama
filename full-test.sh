@@ -5,6 +5,8 @@
 set -e
 
 cd `dirname $0`
+./clean.sh
+
 test_dir=`pwd`
 echo "starting test with SKIP_BUILD=\"${SKIP_BUILD}\" and DO_VALIDATE=\"${DO_VALIDATE}\""
 
